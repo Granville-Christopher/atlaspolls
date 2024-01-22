@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boot5/bootstrap-5.3.1/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/application.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/submitbutton.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- navbar -->
+<nav class="navbar navbar-expand-sm">
+    <div class="container">
+        <!-- links -->
+        <a href="index.html" class="navbar-brand"><i class="fab fa-accusoft"></i><i class="nav-logo"> AtlasPolls.org</i></a>
+        <ul class="navbar-nav">
+
+            <li class="nav-item"><a href="sos.html" class="nav-link">SOS Office</a></li>
+            <li class="nav-item"><a href="register.html" class="nav-link">Elections</a></li>
+
+        </ul>
+    </div>
+</nav>
+<!-- navbar end -->
+
+<!-- header section -->
+<section class="first">
+    <div class="container">
+        <h2>Atlas Polls Online Services</h2>
+    </div>
+</section>
+<!-- header section end -->
+
+
+<!-- main -->
+
+<section class=" second">
+    <div class="container">
+        <h3>Electronic Voter Registration Application</h3>
+        <div class="inc">
+
+            <div class="innc">
+                <p>Please verify that you are eligible to use this electronic application by answering the following questions:</p>
+                <p> <input type="checkbox" name="citizen" id="citizen"> <b>I am an Aptech Student</b></p>
+                <p> <input type="checkbox" name="age" id="age"> <b>I will be at least 18 years of age on or before the election day </b> <br>
+                If you are currently 9 1/2 years old and would like to register to vote now, you must answer yes to this question. However, you must be 18 years old to vote</p>
+                <p> <input type="checkbox" name="idcard" id="idcard"> <b>I have a valid driver's license or an Aptech Issued ID card</b></p>
+            </div>
+        </div>
+        <h3>Your Identity</h3>
+        <div class="inc">
+
+            <div class="innc">
+                <ul>
+                    <li>Please enter your name exactly as it appears on your State of Alabama driver's license or non-driver identification card.</li>
+                    <li>If the name on your driver's license or non-driver identification card does not reflect your current legal name, please click here to use the form-fillable State of Alabama Mail-In Voter Registration Form, instead. This form is a PDF that you can fill out on your computer, print, sign, and mail to your Board of Registrars.</li>
+                </ul>
+            </div>
+            
+            <form name="myForm" onsubmit="validateForm()" id="mmm" method="post">
+                <div class="form-group">
+                    <label for="f-name">FIRST NAME:</label>
+                    <input type="text" class="form-control" id="f-name">
+                </div>
+                <div class="form-group">
+                    <label for="m-name">MIDDLE NAME:</label>
+                    <input type="text" class="form-control" id="m-name" >
+                </div>
+                <div class="form-group">
+                    <label for="l-name">LAST NAME:</label>
+                    <input type="text" class="form-control" id="l-name" >
+                </div>
+                <div class="form-group">
+                    <label for="phone">PHONE NO:</label>
+                    <input type="tel" class="form-control" id="phone" >
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" class="form-control" id="email" >
+                </div>
+                <div class="form-group">
+                    <label for="dob">DATE OF BIRTH:</label>
+                    <input type="date" class="form-control" id="dob" >
+                </div>
+                <div class="form-group">
+                    <label for="male"> MALE</label>
+                    <input type="checkbox"  id="male" onclick="document.getElementById('female').checked = !this.checked">
+               
+                    <label for="female"> FEMALE</label>
+                    <input type="checkbox"  id="female" onclick="document.getElementById('male').checked = !this.checked">
+                </div>
+                <div class="form-group">
+                    <label for="course"> COURSE</label>
+                    <select class="form-control" id="course">
+                        <option>Python</option>
+                        <option>Web</option>
+                        <option>ADSE</option>
+                        <option>Graphics</option>
+                        <option>MOPU</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="password">PASSWORD:</label>
+                    <input type="password" class="form-control" id="password" >
+                </div>
+
+               
+            </form>
+            <div class="text-center">
+                <button id="registerButton" onclick="validateForm()">CONTINUE</button>
+            </div>
+        
+        </div>
+
+       
+    </div>  
+</section>
+<!-- end of main -->
+<footer>
+    <div class="ft">
+        <a href="index.html" class="navbar-brand"><i class="fab fa-accusoft"></i><i class="nav-logo"> AtlasPolls.org</i></a>
+        <P class="text-center"><i>Aptech computer institute, No. 57 Okigwe Rd. Owerri...............,<a href="tel:+234-913-387-1053">+234-913-387-1053</a>, <a href="tel:+234-907-626-2053">+234-907-626-2053</a></i>,   <a href="mailto:granvillechristopher@outlook.com">granvillechristopher@outlook.com</a> </P>
+    </div>
+</footer>
+
+
+
+
+</body>
+<script src="font/fontawesome-free-6.4.2-web/js/all.js"></script>
+<script src="jquery/jquery-3.2.1.min.js"></script>
+<script src="boot5/bootstrap-5.3.1/js/bootstrap.js"></script>
+<script>
+   
+    function validateForm() {
+       
+        function generateRandomID() {
+            // Generate a random 6-digit ID
+            return Math.floor(100000 + Math.random() * 900000);
+        }
+        // Basic form validation logic
+        var firstName = document.getElementById('f-name').value;
+        var middleName = document.getElementById('m-name').value;
+        var lastName = document.getElementById('l-name').value;
+        var phone = document.getElementById('phone').value;
+        var email = document.getElementById('email').value;
+        var dob = document.getElementById('dob').value;
+        var male = document.getElementById('male').checked;
+        var female = document.getElementById('female').checked;
+        var citizen = document.getElementById('citizen').checked;
+        var age = document.getElementById('age').checked;
+        var idcard = document.getElementById('idcard').checked;
+        var course = document.getElementById('course').value;
+        var password = document.getElementById('password').value;
+
+        if (!firstName || !lastName || !phone || !email || !dob || (!male && !female) || !course || !password || !citizen || !age || !idcard) {
+            alert("Please fill in all the fields.");
+            return false;
+        }
+
+        // Validation for email format
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            // Reload the page
+            location.reload();
+            return false;
+        }
+
+        // Validation for password (you can add more criteria)
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            // Reload the page
+            location.reload();
+            return false;
+        }
+
+        // Ensure only one gender is selected
+        if (male && female) {
+            alert("Please select only one gender.");
+            // Reload the page
+            location.reload();
+            return false;
+        }
+        // Generate a random ID
+        var randomID = generateRandomID();
+
+         // Retrieve existing users or initialize an empty array
+         var allUsers = JSON.parse(localStorage.getItem('allUsers')) || [];
+
+        // Store user data in local storage
+        var userData = {
+            id: randomID,
+            firstName: firstName,
+            middleName: middleName,
+            lastName: lastName,
+            phone: phone,
+            email: email,
+            dob: dob,
+            gender: male ? 'Male' : 'Female',
+            course: course,
+            password: password
+        };
+
+        
+        // Add the user data to the array of all users
+        allUsers.push(userData);
+
+        // Update the local storage with the new user data
+        localStorage.setItem('userData', JSON.stringify(userData));
+        localStorage.setItem('allUsers', JSON.stringify(allUsers));
+        localStorage.setItem('isRegistered', true)
+        
+        // Redirect to the index page
+        window.location.href = 'index.html';
+
+        return true;
+
+       
+    }
+
+    
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the register button
+        var registerButton = document.getElementById('registerButton');
+
+        // Check if the user is registered
+        function isUserRegistered() {
+            // Retrieve the registration status from local storage
+            var registrationStatus = localStorage.getItem('isRegistered');
+            // Convert the value to a boolean (default to false if not set)
+            return registrationStatus === 'true';
+        }
+
+        // Attach a click event listener to the register button
+        registerButton.addEventListener('click', function (event) {
+            // If the user is already registered, show an alert and prevent further registration
+            if (isUserRegistered()) {
+                event.preventDefault(); // Prevent the default form submission
+                alert("welcome!");
+            }
+        });
+
+        // Disable the register button if the user is registered
+        if (isUserRegistered()) {
+            registerButton.disabled = true;
+            registerButton.style.cursor = 'not-allowed';
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,21 @@
+.first{
+    background-color: rgba(6, 42, 127, 0.762);
+    height: 8vh;
+}
+.first .container h2{
+    padding-top: 1.5%;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+@media only screen and (max-width: 767px){
+    .first .container h2{
+        padding-top: 3%;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+    }
+}
+

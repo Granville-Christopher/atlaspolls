@@ -1,0 +1,206 @@
+.first{
+    background:linear-gradient(rgba(6, 42, 127, 0.762),rgba(59, 77, 118, 0.762)),url(../img/pexels-mike-1174136.jpg) ;
+    /* height: 60vh; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.first .container h2{
+    padding-top: 1.5%;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.first .container .row .col-md-5 img{
+    width: 405px;
+    display: block;
+}
+.first .container .row .col-md-5 .rtimg{
+    display: none;
+}
+
+.first .container .row .col-md-7 h1{
+    color: aliceblue;
+}
+.first .container .row .col-md-7 h1{
+    color: aliceblue;
+    font-size: 50px;
+    text-shadow: 2px 2px  29px 20px red;
+}
+
+.first .container .row .col-md-7 .fa-vimeo-v{
+    color: rgb(255, 200, 0);
+    font-size: 50px;
+}
+.first .container .row .col-md-7 p{
+    color: aliceblue;
+    font-weight: bold;
+    /* font-size:0px; */
+}
+.first .container .row .col-md-7 h2{
+    font-family: 'Times New Roman', Times, serif;
+    border-top: 2px solid aliceblue;
+}
+.toll-free{
+    margin-top: 2.5%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.toll-free a{
+    color: aliceblue;
+    font-style: italic;
+    text-decoration: none;
+}
+.first .container .row .col-md-7 h3{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 200, 0);
+}
+
+.first .container .row .col-md-7{
+    margin-top: 6%;
+}
+.second{
+    margin-top: 4%;
+}
+.second .container .row{
+    margin-top: 5%;
+}
+.second .container h3{
+    background-color: rgba(6, 42, 127, 0.762);
+    padding-top: 1%;
+    font-weight: 300;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 1%;
+    color: aliceblue;
+    border-radius: 3px;
+}
+
+.second .container .h3{
+    color: aliceblue;
+
+}
+.second .container .row .col-md-4 .fa-beat-fade{
+    font-size: 700%;
+    color:  rgba(6, 42, 127, 0.527);
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.second .container .row .col-md-4 button{
+    height: 90%;
+    margin-top: 3%;
+    width: 100%;
+    border-radius: 3%;
+    border: none;
+    background-color: aliceblue;
+
+}
+.second .container .row .col-md-4 a{
+    text-decoration: none;
+    color: black;
+}
+.second .container .row .col-md-4{
+    background-color: aliceblue;
+    margin: 2%;
+    width: 29.3%;
+    border-radius: 3%;
+    box-shadow: 0px 0px 5px 0px rgba(6, 42, 127, 0.762);
+}
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 767px){
+
+    .first .container .row .col-md-5 img{
+        display: none;
+    }
+    .first .container .row .col-md-5 .rtimg{
+        width: 405px;
+        display: block;
+    }
+    .first .container .row .col-md-7 .fa-vimeo-v{
+        color: rgb(183, 255, 0);
+
+        font-size: 50px;
+    }
+   
+    .first .container .row .col-md-7 h3{
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(183, 255, 0);
+
+    }
+
+  
+   
+    .toll-free{
+        margin-top: 2.5%;
+        font-size: 16px;
+        font-family: 'Times New Roman', Times, ;
+        font-weight: lighter;
+    }
+    .toll-free a{
+        color: rgb(255, 255, 255);
+        font-style: italic;
+        text-decoration: none;
+    }
+ 
+    .first .container .row .col-md-7{
+        margin-top: 6%;
+    }
+    .second{
+        margin-top: 4%;
+    }
+    .second .container .row{
+        margin-top: 5%;
+    }
+    .second .container h3{
+        font-weight: 300;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: aliceblue;
+        border-radius: 3px;
+    }
+    
+    .second .container .h3{
+        color: aliceblue;
+    
+    }
+    .second .container .row .col-md-4 .fa-beat-fade{
+        font-size: 300%;
+        color:  rgba(6, 42, 127, 0.527);
+        padding: 5%;
+        margin-top: 6%;
+    }
+    
+    .second .container .row .col-md-4 button{
+        height: 85%;
+        margin-top: 9.9%;
+        width: 100%;
+        border-radius: 3%;
+        border: none;
+        background-color: aliceblue;
+        box-shadow: 0px 0px 5px 0px rgba(6, 42, 127, 0.762);
+
+    }
+
+    .second .container .row .col-md-4{
+        background-color: aliceblue;
+        margin: 2%;
+        width: 29.3%;
+        font-size: 13px;
+        border-radius: 3%;
+        box-shadow: 0px 0px 5px 0px rgba(6, 42, 127, 0.762);
+    }
+    
+     
+  }

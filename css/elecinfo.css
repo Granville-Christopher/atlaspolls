@@ -1,0 +1,19 @@
+.first{
+    background:linear-gradient(rgba(6, 42, 127, 0.158),rgba(6, 42, 127, 0.314) ), url(../img/pexels-max-rahubovskiy-6794920.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+.first .container .ii{
+    padding-top: 8%;
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+.second .container .row .col-md-3 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: lighter;
+}

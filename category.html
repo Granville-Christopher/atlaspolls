@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boot5/bootstrap-5.3.1/css/bootstrap.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/submitbutton.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.4.2-web/css/all.css">
+    <script src="./js/votecount.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+<nav class="navbar navbar-expand-sm">
+    <div class="container">
+        <!-- links -->
+        <a href="index.html" class="navbar-brand"><i class="fab fa-accusoft"></i> <i class="nav-logo"> AtlasPolls.org</i></a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="sos.html" class="nav-link">SOS Office</a></li>
+            <li class="nav-item"><a href="register.html" class="nav-link">Elections</a></li>
+
+        </ul>
+    </div>
+</nav>
+<!-- navbar end -->
+
+<!-- header section -->
+<section class="first">
+    <div class="container">
+        <h2>Atlas Polls Online Services</h2>
+    </div>
+</section>
+<!-- header section end -->
+
+
+<!-- main -->
+
+<section class=" second">
+    <div class="container">
+        <div class="inc">
+            <h2 class="text-center mb-4 mt-4">ELECTION CATEGORIES</h2>
+            <!-- DRESSING category -->
+            <div class="category-container row text-center">
+                <div class="col-md-4">
+                    <h4>DRESSING</h4>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card" id="kizzdress">
+                        <div class="card-body">
+                            <b class="card-title">KIZITO</b>
+                            <button data-category="category_dressing" data-candidate-id="kizzdress" candidateID="one" class="btn btn-primary category_dressing">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_kizzdress"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card" id="chibykedress">  
+                        <div class="card-body">
+                            <b class="card-title">CHIBYKE</b>
+                            <button data-category="category_dressing" data-candidate-id="chibykedress" candidateID="one" class="btn btn-primary category_dressing">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_chibykedress"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card" id="martindress">
+                        <div class="card-body">
+                            <b class="card-title">MARTINS</b>
+                            <button data-category="category_dressing" data-candidate-id="martindress" candidateID="one" class="btn btn-primary category_dressing">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_martindress"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card" id="richarddress">
+                        <div class="card-body">
+                            <b class="card-title">RICHARD</b>
+                            <button data-category="category_dressing" data-candidate-id="richarddress" candidateID="one" class="btn btn-primary category_dressing">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_richarddress"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Link to the vote counts page -->
+        
+            
+        
+
+
+        
+            <div class="category-container row text-center">
+ 
+                <div class="col-md-4">
+                    <h4>PUNCTUALITY</h4>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <b class="card-title ">KIZITO</b>
+                            <button data-category="category_punctual" data-candidate-id="kizzpunc" candidateID="two" class="btn btn-primary category_punctual">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_kizzpunc"></span></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">  
+                        <div class="card-body">
+                            <b class="card-title">CHIBYKE </b>
+                            <button data-category="category_punctual" data-candidate-id="chibykepunc" candidateID="two" class="btn btn-primary category_punctual">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_chibykepunc"></span></p>
+
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <b class="card-title">MARTINS</b>
+                            <button data-category="category_punctual" data-candidate-id="martinpunc" candidateID="two" class="btn btn-primary category_punctual">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_martinpunc"></span></p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <b class="card-title">RICHARD</b>
+                            <button data-category="category_punctual" data-candidate-id="richardpunc" candidateID="two" class="btn btn-primary category_punctual">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_richardpunc"></span></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Link to the vote counts page -->
+
+
+            <div class="category-container row text-center">
+                <div class="col-md-4">
+                    <h4>ACADEMIC</h4>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <b class="card-title ">KIZITO</b>
+                            <button data-category="category_academic" data-candidate-id="kizzacad" candidateID="three" class="btn btn-primary category_academic">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_kizzacad"></span></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">  
+                        <div class="card-body">
+                            <b class="card-title">CHIBYKE </b>
+                            <button data-category="category_academic" data-candidate-id="chibykeacad" candidateID="three" class="btn btn-primary category_academic">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_chibykeacad"></span></p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <b class="card-title">MARTINS</b>
+                            <button data-category="category_academic" data-candidate-id="martinacad" candidateID="three" class="btn btn-primary category_academic">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_martinacad"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <b class="card-title">RICHARD</b>
+                            <button data-category="category_academic" data-candidate-id="richardacad" candidateID="three" class="btn btn-primary category_academic">Vote</button>
+                            <p class="card-text">Votes: <span id="votes_richardacad"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Link to the vote counts page -->
+             <div class="text-center mt-4">
+                <a href="elecinfo.html">View Vote Counts</a>
+            </div>
+            <div class="text-center mt-4">
+                <a href="dashboard.html" >
+                    <button>Back to Dashboard</button>
+                </a>
+            </div>
+            
+         
+        </div>
+       
+    </div>  
+</section>
+<!-- end of main -->
+<footer>
+    <div class="ft">
+        <a href="index.html" class="navbar-brand"><i class="fab fa-accusoft"></i><i class="nav-logo"> AtlasPolls.org</i></a>
+        <P class="text-center"><i>Aptech computer institute, No. 57 Okigwe Rd. Owerri...............,<a href="tel:+234-913-387-1053">+234-913-387-1053</a>, <a href="tel:+234-907-626-2053">+234-907-626-2053</a></i>,   <a href="mailto:granvillechristopher@outlook.com">granvillechristopher@outlook.com</a> </P>
+    </div>
+</footer>
+
+
+</body>
+<script src="font/fontawesome-free-6.4.2-web/js/all.js"></script>
+<script src="jquery/jquery-3.2.1.min.js"></script>
+<script src="boot5/bootstrap-5.3.1/js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function vote(category, one) {
+              //check if the user have voted 
+            var hasVoted = localStorage.getItem('hasVoted');
+            if (hasVoted) {
+                alert('You have already voted in this session.');
+                return;
+            }
+            // Retrieve the current vote count for the candidate in the specified category
+            var currentVotes = localStorage.getItem(category + '_' + one) || 0;
+
+            // Update the vote count
+            currentVotes = parseInt(currentVotes) + 1;
+
+            // Update the displayed vote count
+            var votesElement = document.getElementById('votes_' + one);
+            votesElement.textContent = currentVotes;
+
+            // Disable the button
+            var buttons = document.querySelectorAll('.' + category);
+            buttons.forEach(function(btn) {
+                btn.disabled = true;
+            });
+
+            // Store the updated vote count in local storage
+            localStorage.setItem(category + '_' + one, currentVotes);
+            // Set a flag in session storage to indicate that the user has voted in this session
+            localStorage.setItem('hasVoted', true);
+        
+        }
+
+        // Attach click event listeners to all buttons
+        var buttons = document.querySelectorAll('.category_dressing');
+        buttons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var category = this.getAttribute('data-category');
+                var one = this.getAttribute('data-candidate-id');
+                vote(category, one);
+            });
+        });
+    });
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Reset local storage for the specified category (you may adjust the category name)
+        // localStorage.removeItem('category_punctual');
+
+        function vote2(category, two) {
+            //check if the user have voted 
+            var hasVotedy = localStorage.getItem('hasVotedy');
+            if (hasVotedy) {
+                alert('You have already voted in this session.');
+                return;
+            }
+
+            // Retrieve the current vote count for the candidate in the specified category
+            var currentVotes = localStorage.getItem(category + '_' + two) || 0;
+
+            // Update the vote count
+            currentVotes = parseInt(currentVotes) + 1;
+
+            // Update the displayed vote count
+            var votesElement = document.getElementById('votes_' + two);
+            votesElement.textContent = currentVotes;
+
+            // Disable the button
+            var buttons = document.querySelectorAll('.' + category);
+            buttons.forEach(function(btn) {
+                btn.disabled = true;
+            });
+
+            // Store the updated vote count in local storage
+            localStorage.setItem(category + '_' + two, currentVotes);
+
+            // Set a flag in session storage to indicate that the user has voted in this session
+            localStorage.setItem('hasVotedy', true);
+        }
+
+        // Attach click event listeners to all buttons for punctual category
+        var buttonspunctualCategory = document.querySelectorAll('.category_punctual');
+        buttonspunctualCategory.forEach(function (button) {
+            button.addEventListener('click', function () {
+                var category = this.getAttribute('data-category');
+                var two = this.getAttribute('data-candidate-id');
+                vote2(category, two);
+            });
+        });
+
+        // Ensure the buttons are initially enabled for punctual category (remove 'disabled' attribute)
+        buttonspunctualCategory.forEach(function (button) {
+            button.removeAttribute('disabled');
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+       
+        // Reset local storage for the specified category (you may adjust the category name)
+        // localStorage.removeItem('category_punctual');
+
+        function vote3(category, three) {
+            //check if the user have voted 
+            var hasVotedt = localStorage.getItem('hasVotedt');
+            if (hasVotedt) {
+                alert('You have already voted in this session.');
+                return;
+            }
+            // Retrieve the current vote count for the candidate in the specified category
+            var currentVotes = localStorage.getItem(category + '_' + three) || 0;
+
+            // Update the vote count
+            currentVotes = parseInt(currentVotes) + 1;
+
+            // Update the displayed vote count
+            var votesElement = document.getElementById('votes_' + three);
+            votesElement.textContent = currentVotes;
+
+            // Disable the button
+            var buttons = document.querySelectorAll('.' + category);
+            buttons.forEach(function(btn) {
+                btn.disabled = true;
+            });
+
+            // Store the updated vote count in local storage
+            localStorage.setItem(category + '_' + three, currentVotes);
+            // Set a flag in session storage to indicate that the user has voted in this session
+            localStorage.setItem('hasVotedt', true);
+        }
+
+        // Attach click event listeners to all buttons for punctual category
+        var buttonsacademicCategory = document.querySelectorAll('.category_academic');
+        buttonsacademicCategory.forEach(function (button) {
+            button.addEventListener('click', function () {
+                var category = this.getAttribute('data-category');
+                var three = this.getAttribute('data-candidate-id');
+                vote3(category, three);
+            });
+        });
+
+        // Ensure the buttons are initially enabled for punctual category (remove 'disabled' attribute)
+        buttonsacademicCategory.forEach(function (button) {
+            button.removeAttribute('disabled');
+        });
+        
+    });
+</script>
+
+
+  
+</html>

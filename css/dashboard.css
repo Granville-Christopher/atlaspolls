@@ -1,0 +1,31 @@
+
+.second .container .inc{
+    margin-top: 2%;
+}
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card {
+    margin-TOP: 4%;
+}
+.card-header {
+    background-color: rgba(6, 42, 127, 0.845);
+    color: aliceblue;
+}
+
+.card .card-body .btn{
+    background-color: rgba(6, 42, 127, 0.845);
+    color: aliceblue;
+}
+.first .container{
+    display: flex;
+}
+.first .container p{
+    margin-left: 25%;
+}

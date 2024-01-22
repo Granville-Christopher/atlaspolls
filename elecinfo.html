@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="boot5/bootstrap-5.3.1/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/submitbutton.css">
+    <link rel="stylesheet" href="css/elecinfo.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+<body>
+    <!-- navbar -->
+<nav class="navbar navbar-expand-sm">
+    <div class="container">
+        <!-- links -->
+        <a href="index.html" class="navbar-brand"><i class="fab fa-accusoft"></i><i class="nav-logo"> AtlasPolls.org</i></a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="sos.html" class="nav-link">SOS Office</a></li>
+            <li class="nav-item"><a href="register.html" class="nav-link">Elections</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+
+<!-- navbar end -->
+<!-- second navbar -->
+<nav class="navbar navbar-expand second-navbar">
+    <div class="container ">
+        <!-- links -->
+        <h4>Aptech Decides</h4>
+        <ul class="navbar-nav">
+
+            <li class="nav-item"><a href="sos.html" class="nav-link">SOS Office</a></li>
+            <li class="nav-item"><a href="candidates.html" class="nav-link">candidates</a></li>
+          
+
+        </ul>
+    </div>
+</nav>
+<!-- second navbar end -->
+
+<!-- header section -->
+<section class="first">
+    <div class="container">
+        <h2 class="ii">Election Information</h2>
+    </div>
+</section>
+<!-- header section end -->
+
+
+<!-- main -->
+
+<section class=" second">
+    <div class="container">
+        <div class="row text-center mt-5">
+            <div class="col-md-3">
+                <h3>KIZITO</h3>
+                <h5>LIVE VOTES</h5>
+                <p class="card-text">Dressing Votes: <span id="votes_kizzdress">0</span></p>
+                <p class="card-text">Punctuality Votes: <span id="votes_kizzpunc">0</span></p>
+                <p class="card-text">Academic Votes: <span id="votes_kizzacad">0</span></p>
+
+
+            </div>
+            <div class="col-md-3">
+                <h3>CHIBYKE</h3>
+                <h5>LIVE VOTES</h5>
+                <p class="card-text">Dressing Votes: <span id="votes_chibykedress">0</span></p>
+                <p class="card-text">Punctuality Votes: <span id="votes_chibykepunc">0</span></p>
+                <p class="card-text">Academic Votes: <span id="votes_chibykeacad">0</span></p>
+
+
+            </div>
+            <div class="col-md-3">
+                <h3>MARTINS</h3>
+                <h5>LIVE VOTES</h5>
+                <p class="card-text">Dressing Votes: <span id="votes_martindress">0</span></p>
+                <p class="card-text">Punctuality Votes: <span id="votes_martinpunc">0</span></p>
+                <p class="card-text">Academic Votes: <span id="votes_martinacad">0</span></p>
+
+            </div>
+            <div class="col-md-3">
+                <h3>RICHARD</h3>
+                <h5>LIVE VOTES</h5>
+                <p class="card-text">Dressing Votes: <span id="votes_richarddress">0</span></p>
+                <p class="card-text">Punctuality Votes: <span id="votes_richardpunc">0</span></p>
+                <p class="card-text">Academic Votes: <span id="votes_richardacad">0</span></p>
+
+
+            </div>
+
+        </div>
+       
+    </div>  
+</section>
+<!-- end of section -->
+<!-- footer -->
+<footer>
+    <div class="ft">
+        <a href="index.html" class="navbar-brand"><i class="fab fa-accusoft"></i><i class="nav-logo"> AtlasPolls.org</i></a>
+        <P class="text-center"><i>Aptech computer institute, No. 57 Okigwe Rd. Owerri...............,<a href="tel:+234-913-387-1053">+234-913-387-1053</a>, <a href="tel:+234-907-626-2053">+234-907-626-2053</a></i>,   <a href="mailto:granvillechristopher@outlook.com">granvillechristopher@outlook.com</a> </P>
+    </div>
+</footer>
+<!--end of footer -->
+
+
+
+</body>
+<script src="font/fontawesome-free-6.4.2-web/js/all.js"></script>
+<script src="jquery/jquery-3.2.1.min.js"></script>
+<script src="boot5/bootstrap-5.3.1/js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- <script src="./js/votecount.js"></script> -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Retrieve and display vote counts from local storage
+        function displaydressCounts() {
+            var candidates = ['kizzdress', 'chibykedress', 'martindress', 'richarddress'];
+
+            candidates.forEach(function(candidateId) {
+                var votesElement = document.getElementById('votes_' + candidateId);
+                var voteCount = localStorage.getItem('category_dressing_' + candidateId) || 0;
+                votesElement.textContent = voteCount;
+            });
+        }
+
+        // Call the function on page load
+        displaydressCounts();
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Retrieve and display vote counts from local storage for another category
+        function displayVoteCountspunctualCategory() {
+            var candidatespunctualCategory = ['kizzpunc', 'chibykepunc', 'martinpunc', 'richardpunc'];
+
+            candidatespunctualCategory.forEach(function (two) {
+                var votesElement = document.getElementById('votes_' + two);
+                var voteCount = localStorage.getItem('category_punctual_' + two) || 0;
+                votesElement.textContent = voteCount;
+            });
+        }
+
+        // Call the function on page load for another category
+        displayVoteCountspunctualCategory();
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Retrieve and display vote counts from local storage for another category
+        function displayVoteCountsacademicCategory() {
+            var candidatesacademicCategory = ['kizzacad', 'chibykeacad', 'martinacad', 'richardacad'];
+
+            candidatesacademicCategory.forEach(function (three) {
+                var votesElement = document.getElementById('votes_' + three);
+                var voteCount = localStorage.getItem('category_academic_' + three) || 0;
+                votesElement.textContent = voteCount;
+            });
+        }
+
+        // Call the function on page load for another category
+        displayVoteCountsacademicCategory();
+    });
+</script>
+
+
+</html>
